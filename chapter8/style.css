@@ -108,6 +108,7 @@ header {
   border: 1px solid #6893ff;
   border-radius: 5px;
   margin-top: 16px;
+  cursor: pointer;
 }
 
 .imgItem img {
