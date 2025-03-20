@@ -12,11 +12,6 @@ body {
   padding-bottom: 80px;
 }
 
-.main {
-  width: 1000px;
-  margin: auto;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -29,11 +24,15 @@ body {
   z-index: 99;
 }
 
+.main {
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+}
 .content {
   margin-top: 70px;
   display: flex;
   gap: 15px;
-  width: 100%;
 }
 .left {
   width: 200px;
