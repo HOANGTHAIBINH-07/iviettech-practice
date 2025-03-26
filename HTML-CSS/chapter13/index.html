@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chapter13</title>
+  </head>
+
+  <body>
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <select name="city" id="city">
+        <option value="0">Choose your city</option>
+        <option value="1">Ha Noi</option>
+        <option value="2">Hai Phong</option>
+        <option value="3">HCM</option>
+      </select>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <div class="save-pass">
+        <input type="checkbox" name="save-pass" id="save-pass" />
+        <label for="save-pass">Save your password</label>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+      if ((document.getElementById("save-pass").checked = true)) {
+        console.log("checked");
+      } else {
+        console.log("not checked");
+      }
+    </script>
+  </body>
+</html>
