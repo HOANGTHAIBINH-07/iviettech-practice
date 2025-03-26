@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(206, 161, 62);
+  padding: 10px 15px;
+}
+
+.submenu {
+  display: none;
+  right: 0;
+  top: 20px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+}
+
+nav li:hover .submenu {
+  display: block;
+}
+
+.submenu:hover li {
+}
