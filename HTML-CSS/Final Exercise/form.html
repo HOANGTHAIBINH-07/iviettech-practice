@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="regist-form">
+      <form action="">
+        <h2>Đăng ký</h2>
+        <div class="form-group">
+          <label for="username">Họ và tên</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="username">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="password-confirm">Xác nhận mật khẩu</label>
+          <input
+            type="password-confirm"
+            id="password-confirm"
+            name="password-confirm"
+            required
+          />
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="temrs" />
+          <label for="temrs">Tôi đồng ý điều khoản</label>
+        </div>
+        <div class="button">
+          <button type="submit">Đăng ký</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
