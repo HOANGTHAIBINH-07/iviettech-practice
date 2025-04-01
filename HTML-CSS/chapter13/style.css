@@ -1,12 +1,28 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+  margin: 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
   width: 300px;
-  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(229, 224, 209, 0.8);
+  border-radius: 10px;
 }
 
 label {
@@ -20,6 +36,13 @@ label {
 }
 
 input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
   margin-bottom: 10px;
   padding: 5px;
   border: 1px solid #ccc;
