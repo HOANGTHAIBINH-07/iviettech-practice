@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 03</title>
+  </head>
+  <body>
+    <input type="text" id="textIn" />
+    <br />
+    <button type="button" id="button">Button</button>
+    <br />
+    <span id="textOut"></span>
+    <script>
+      function $(id) {
+        return document.getElementById(id);
+      }
+
+      function checkInputType(value) {
+        if (/^\d+$/.test(value)) {
+          return Number(value);
+        } else if (/^[a-zA-Z\s]*$/.test(value)) {
+          return "string";
+        } else {
+          return "mixed";
+        }
+      }
+
+      $("button").addEventListener("click", function () {
+        const diem = $("textIn").value;
+
+        if (typeof checkInputType(diem) === "number") {
+          if (diem > 0 && diem <= 10) {
+            if (diem >= 8) {
+              $("textOut").textContent = "Hoc sinh gioi!";
+            } else if (diem >= 6.5) {
+              $("textOut").textContent = "Hoc sinh kha!";
+            } else if (diem >= 5) {
+              $("textOut").textContent = "Hoc sinh trung binh!";
+            } else {
+              $("textOut").textContent = "Hoc sinh yeu!";
+            }
+          } else {
+            $("textOut").textContent = "Please enter a value from 0 to 10!";
+            return;
+          }
+        } else {
+          $("textOut").textContent = "Please enter a number value!";
+          return;
+        }
+      });
+    </script>
+  </body>
+</html>

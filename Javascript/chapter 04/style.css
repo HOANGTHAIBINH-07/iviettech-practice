@@ -1,0 +1,83 @@
+html {
+  height: 100%; /* Đảm bảo chiều cao của html là 100% */
+}
+body {
+  font-family: Arial, sans-serif; /* Font chữ mặc định */
+  margin: 0; /* Loại bỏ margin mặc định */
+  padding: 0; /* Loại bỏ padding mặc định */
+  background-color: #f4f4f4; /* Màu nền của trang */
+  box-sizing: border-box;
+  min-height: 100%; /* Đảm bảo chiều cao tối thiểu của body là 100% chiều cao của viewport */
+}
+
+ul {
+  list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+  padding: 0; /* Loại bỏ padding mặc định bên trái */
+  margin: 0; /* Loại bỏ margin mặc định ở trên và dưới */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.headerContaier {
+  height: 100%;
+  padding: 0 20px;
+}
+
+.openIcon {
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+.menuContainer {
+  background-color: rgb(61, 100, 135);
+  position: absolute;
+  top: 70px;
+  padding: 20px;
+  width: 300px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.showMenu {
+  opacity: 1;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
