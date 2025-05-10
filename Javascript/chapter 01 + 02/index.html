@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Chapter 01</title>
+  </head>
+  <body>
+    <!-- <label for="text" class="text">0</label>
+    <h1 class="text">Alo</h1>
+    <button id="btn" class="btn">Signin</button>
+
+    <input type="text" class="screen" />
+    <div class="calContainer">
+      <label id="1" class="btn">1</label>
+      <label id="2" class="btn">2</label>
+      <label id="3" class="btn">3</label>
+      <label id="4" class="btn">4</label>
+      <label id="5" class="btn">5</label>
+      <label id="6" class="btn">6</label>
+    </div> -->
+
+    <script>
+      const soluongHS = prompt("Nhập số lượng học sinh trong lớp: ");
+      const diemHS = [];
+      var tongDiem = 0;
+      let xloaiHS = { kha: 0, gioi: 0, trungbinh: 0, yeu: 0, kem: 0 };
+      for (let i = 0; i < parseInt(soluongHS); i++) {
+        diemHS[i] = parseInt(prompt("Nhập điểm của HS số " + (i + 1) + ": "));
+        if (diemHS[i] >= 8) {
+          xloaiHS.gioi++;
+          console.log("Học sinh số " + (i + 1) + " đạt học sinh giỏi");
+        } else if (diemHS[i] >= 6.5 && diemHS[i] < 8) {
+          xloaiHS.kha++;
+          console.log("Học sinh số " + (i + 1) + " đạt học sinh khá");
+        } else if (diemHS[i] >= 5 && diemHS[i] < 6.5) {
+          xloaiHS.trungbinh++;
+          console.log("Học sinh số " + (i + 1) + " đạt học sinh trung bình");
+        } else if (diemHS[i] >= 3 && diemHS[i] < 5) {
+          xloaiHS.yeu++;
+          console.log("Học sinh số " + (i + 1) + " đạt học sinh yếu");
+        } else {
+          xloaiHS.kem++;
+          console.log("Học sinh số " + (i + 1) + " đạt học sinh kém");
+        }
+
+        tongDiem += parseInt(diemHS[i]);
+      }
+      // console.log("tổng điểm trong lớp là: " + tongDiem);
+      // console.log(
+      //   "điểm trung bình trong lớp là: " + tongDiem / parseInt(diemHS.length)
+      // );
+      console.log(
+        "Số học sinh giỏi là: " +
+          xloaiHS.gioi +
+          "\n" +
+          "Số học sinh khá là: " +
+          xloaiHS.kha +
+          "\n" +
+          "Số học sinh trung bình là: " +
+          xloaiHS.trungbinh +
+          "\n" +
+          "Số học sinh yếu là: " +
+          xloaiHS.yeu +
+          "\n" +
+          "Số học sinh kém là: " +
+          xloaiHS.kem
+      );
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>

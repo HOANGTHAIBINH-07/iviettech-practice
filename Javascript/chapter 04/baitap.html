@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter4 Excersice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div id="openIcon" class="openIcon">
+          <img src="./icons8-menu.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <div id="menuContainer" class="menuContainer">
+      <div id="closeIcon" class="closeIcon">
+        <img src="./icons8-close.svg" alt="" />
+      </div>
+      <ul class="menu">
+        <li><a href="baitap.html">Home</a></li>
+        <li><a href="baitap1.html">Baitap1</a></li>
+        <li><a href="baitap2.html">Baitap2</a></li>
+        <li><a href="baitap3.html">Baitap3</a></li>
+        <li><a href="baitap4.html">Baitap4</a></li>
+        <li><a href="baitap5.html">Baitap5</a></li>
+        <li><a href="baitap6.html">Baitap6</a></li>
+      </ul>
+    </div>
+    <div class="mainContainer">
+      <form action="">
+        <div class="formContainer">
+          <h1>Form</h1>
+          <div class="formGroup">
+            <label for="name">Họ và tên <span class="red">*</span></label>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <span class="error"></span>
+          </div>
+          <div class="formGroup">
+            <label for="email">Email <span class="red">*</span></label>
+            <input type="text" id="email" placeholder="Enter your email" />
+            <span class="error"></span>
+          </div>
+          <div class="formGroup">
+            <label for="phone">Số điện thoại <span class="red">*</span></label>
+            <input
+              type="text"
+              id="phoneNumber"
+              placeholder="Enter your phone number"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="formGroup">
+            <label for="gender">Giới tính <span class="red">*</span></label>
+            <div class="formRadio">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Nam</label>
+            </div>
+            <div class="formRadio">
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Nữ</label>
+            </div>
+            <span id="radioErr" class="radio error"></span>
+          </div>
+          <div class="formGroup">
+            <label for="city">Tỉnh thành <span class="red">*</span></label>
+            <select name="city" id="city">
+              <option value="">-- Chọn tỉnh thành --</option>
+              <option value="1">Hà Nội</option>
+              <option value="2">Hồ Chí Minh</option>
+              <option value="3">Đà Nẵng</option>
+              <option value="4">Nha Trang</option>
+            </select>
+            <p class="error"></p>
+          </div>
+          <div class="formGroup formCheck">
+            <input type="checkbox" id="confirm" name="confirm" />
+            <label for="confirm"
+              >Tôi đồng ý <span class="red">*</span><br
+            /></label>
+          </div>
+          <p id="confirmErr" class="error"></p>
+          <button id="button" type="button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
